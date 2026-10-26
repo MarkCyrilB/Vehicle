@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocita - Premium Car Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="VELOCITA.png" alt="Velocita" class="logo-img">
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item nav-auth" id="navAuth">
+                    <a href="login.html" class="nav-link btn-login">Login</a>
+                </li>
+                <li class="nav-item nav-auth" id="navSignup">
+                    <a href="signup.html" class="nav-link btn-signup">Sign Up</a>
+                </li>
+                <li class="nav-item nav-user" id="navUser" style="display: none;">
+                    <span class="nav-username" id="navUsername"></span>
+                    <button class="btn-logout" onclick="logout()">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Drive the Dream</h1>
+                <p class="hero-subtitle">Premium Luxury & Performance Vehicles</p>
+                <p class="hero-tagline">Excellence in Motion</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">
+                        <i class="fas fa-car"></i>
+                        View Inventory
+                    </a>
+                    <a href="#featured" class="btn btn-secondary">
+                        <i class="fas fa-star"></i>
+                        Featured Cars
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collection</h2>
+                <p class="section-subtitle">Handpicked selection of our finest vehicles</p>
+            </div>
+            <div class="featured-grid" id="featuredGrid">
+                <!-- Featured cars will be dynamically loaded -->
+            </div>
+            <div class="section-footer">
+                <a href="products.html" class="btn btn-primary">View All Inventory</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Velocita</h2>
+                    <p class="about-description">
+                        Velocita represents the pinnacle of automotive excellence. We curate the world's finest luxury and performance vehicles, 
+                        bringing together cutting-edge engineering, breathtaking design, and unparalleled driving experiences.
+                    </p>
+                    <p class="about-description">
+                        Each vehicle in our collection is carefully selected for its exceptional quality, performance, and prestige. 
+                        Whether you seek the thrill of supercar performance or the elegance of luxury motoring, Velocita delivers automotive perfection.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Premium Vehicles</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Certified Quality</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Customer Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="2026-chevrolet-corvette-front-angle-view-ak.webp" alt="Premium Car">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to find your dream car?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Luxury Car District, Premium Avenue</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@velocita.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="VELOCITA.png" alt="Velocita" class="footer-logo">
+                    <p class="footer-tagline">Excellence in Motion</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Inventory</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Velocita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
